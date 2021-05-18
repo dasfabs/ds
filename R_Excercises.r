@@ -1,12 +1,18 @@
 #Exercise 1 (R)
 x <- sample(0:100, 1)
-y <- readline("What is the value of x?")
-if (x == y) {
-  print("Great")
-} else if (x < y) {
-  print("Your number is to high")
-}else if (x > y) {
-  print("Your number is to low")
+i <- 0 
+while (i < 5) {
+  y <- readline("What is the value of x?")
+  y = as.numeric(y)
+  if (x == y) {
+    print("Great")
+    break
+  } else if (x < y) {
+    print("Your number is to high")
+  }else if (x > y) {
+    print("Your number is to low")
+  }
+  i = i+1;
 }
 
 
